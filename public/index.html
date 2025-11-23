@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Student Video Rooms</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Student Video Rooms</h1>
+      </header>
+
+      <main>
+        <div class="controls">
+          <input id="room-input" placeholder="Room name (e.g. math-101)" />
+          <button id="join-btn">Join Room</button>
+          <button id="leave-btn" disabled>Leave</button>
+        </div>
+
+        <section id="videos" class="videos">
+          <div class="video-slot">
+            <video id="localVideo" autoplay muted playsinline></video>
+            <div class="label">You</div>
+          </div>
+        </section>
+
+      </main>
+
+      <footer>
+        <small>Mesh-powered demo • Not production-ready (see notes)</small>
+      </footer>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+  </body>
+      </html>
